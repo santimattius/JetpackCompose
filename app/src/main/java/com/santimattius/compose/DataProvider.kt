@@ -5,8 +5,8 @@ object DataProvider {
     val programmers = (1..10).map {
         Programmer(
             id = it,
-            name = "Programmer $it",
-            languages = "Kotlin"
+            name = "Santiago Mattiauda",
+            languages = "Kotlin, Swift, Dart"
         )
     }
 }
