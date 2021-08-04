@@ -4,7 +4,6 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.padding
@@ -62,14 +61,13 @@ fun RootContainer() {
 @Composable
 fun ProgrammerRow(programmer: Programmer) {
     Row(
-        modifier = Modifier.padding(bottom = 8.dp).clickable {
-            //TODO: add onclick action
-        },
+        modifier = Modifier.padding(bottom = 8.dp),
         verticalAlignment = Alignment.CenterVertically
     ) {
         Image(
             painter = painterResource(id = R.drawable.ic_account),
-            contentDescription = "programmer image"
+            contentDescription = "Programmer Avatar",
+            modifier = Modifier.padding(8.dp)
         )
         Column {
             Text(programmer.name)
@@ -78,15 +76,6 @@ fun ProgrammerRow(programmer: Programmer) {
     }
 }
 
-@Composable
-fun TopAppBar() {
-    TopAppBar(
-        title = { Text(text = "AppBar") },
-        navigationIcon = {
-
-        },
-    )
-}
 
 
 
