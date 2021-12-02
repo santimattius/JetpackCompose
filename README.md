@@ -1,4 +1,4 @@
-# Android Jetpack compose Basics
+# Android Jetpack Compose Basics
 
 Playground App using Jetpack compose.
 
